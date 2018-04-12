@@ -25,6 +25,7 @@ const (
 	Saturday
 	Sunday
 )
+// 常量一般都大写
 func main() {
 	fmt.Println(ea,eb,ec,ed)
 	fmt.Println(
