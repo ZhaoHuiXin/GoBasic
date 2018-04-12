@@ -25,6 +25,8 @@ const (
 	Saturday
 	Sunday
 )
+// 常量一般用大写字母命名，但是这样会被外部调用到，可以在常量名前加一个小写字母或者_
+
 func main() {
 	fmt.Println(ea,eb,ec,ed)
 	fmt.Println(
