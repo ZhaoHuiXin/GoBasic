@@ -1,0 +1,3 @@
+int 的零值是0
+float32 的零值是0
+bool 的零值是false
