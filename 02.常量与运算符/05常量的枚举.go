@@ -8,8 +8,8 @@ import(
 const(
 	// a与b都为“A”
 	ea = 'A' // "A"输出 A； 'A'输出65 。
-			// Go语言的单引号一般用来表示「rune literal」，
-			// 即——码点字面量。
+			// Go语言的单引号一般用来表示「rune literal」，即——码点字面量。
+			//golang里单引号只能有一个字符，如果输出会返回这个字符的ascii码 ，如果想输出为字符需要用string()函数转换一下。
 	eb
 	ec = iota // c的值是2
 	ed // d的值是3
