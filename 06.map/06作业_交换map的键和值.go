@@ -1,4 +1,5 @@
-package _map
+// 利用for range部分的知识，将map[int]string的键和值进行交换
+package _6_map
 
 import (
 	"fmt"

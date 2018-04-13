@@ -1,4 +1,4 @@
-package _map
+package _6_map
 
 import "fmt"
 
