@@ -1,4 +1,4 @@
-package _6_map
+package main
 
 import (
 	"fmt"
@@ -19,5 +19,6 @@ func main() {
 				// 通过这里也可以看出slice是引用类型的，因为这里并没有返回，
 				// 	只是传入s，它就会对slice本身进行操作
 	fmt.Println(s)
+
 
 }

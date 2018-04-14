@@ -34,5 +34,4 @@ func main() {
 	var s2 = a1[5:10] // 取数组中多个元素;包左不包右
 	fmt.Println(s2)
 
-
 }

@@ -10,7 +10,9 @@ import "fmt"
 
 func main() {
 	s1 := make([]int,3,6)
+	var p1 *[]int = &s1
 	fmt.Printf("%p\n",s1) // 注意使用的是Printf 打印的 %p是内存地址
+	fmt.Println(p1)
 	s1 = append(s1,1,2,3)
 	fmt.Printf("%v %p\n",s1,s1) // %v是值，没超过s1的最大容量，地址不变
 	s1 = append(s1,4,5,6)
