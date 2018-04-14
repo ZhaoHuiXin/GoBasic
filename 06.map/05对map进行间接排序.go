@@ -7,7 +7,7 @@ import (
 
 func main() {
 	m := map[int]string{1:"a",2:"b",3:"c",4:"d",5:"e"}
-	s := make([]int,len(m))  //虽然说map是无序的，s和i的配合取到map中的所有value
+	s := make([]int,len(m))  //虽然说map是无序的，slice s和i的配合取到map中的所有value
 	i := 0
 	// 通过这个迭代将m中所有的key都存到了slice s当中，但是此时每次slice中的key都是无序的
 	for k, _ := range m{

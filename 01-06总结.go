@@ -24,7 +24,7 @@ func main() {
 
 	// 定义指向数组的指针
 	var p1 *[10]int = &a2 // 指向已知数组
-	var p2 = new(*[10]int) // 指向空数组
+	var p2 = new(*[]int) // 指向空数组
 	var p3 *[]int = &s1
 	fmt.Println(p1,p2,p3)
 }
