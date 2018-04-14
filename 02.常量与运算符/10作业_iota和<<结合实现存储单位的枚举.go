@@ -16,5 +16,5 @@ const(
 	YB
 )
 func main() {
-fmt.Println(YB)
+	fmt.Println(YB)
 	}
