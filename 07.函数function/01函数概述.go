@@ -49,17 +49,24 @@ a，b，c 就能被返回;
 
 // 传入不可变类型;如int型，string型
 // 只是参数值的拷贝
-//func main() {
-//	a := 1
-//	b := 2
-//	fmt.Println(a,b)
-//	A(a,b)
-//}
-//func A(a ...int){
-//	a[0] = 111
-//	a[1] = 222
-//	fmt.Println(a[0],a[1])
-//}
+func main() {
+	a := 1
+	b := 2
+	fmt.Printf("%p\n",&a)
+	fmt.Printf("%p\n",&b)
+	fmt.Println(a,b)
+	A(a,b)
+}
+func A(a ...int){
+	fmt.Printf("%p\n",&a[0])
+	fmt.Printf("%p\n",&a[1])
+	fmt.Println(a[0],a[1])
+	a[0] = 111
+	a[1] = 222
+	fmt.Printf("%p\n",&a[0])
+	fmt.Printf("%p\n",&a[1])
+	fmt.Println(a[0],a[1])
+}
 
 // 传入可变类型参数,slice,
 // 并不是传一个指针，而是对slice的内存地址进行拷贝
@@ -87,15 +94,15 @@ a，b，c 就能被返回;
 //}
 
 // 如果想改变传入的int和string类型的值，传入指向地址的指针
-func main() {
-	a := 1
-	fmt.Println(a)
-	A(&a)
-}
-func A(a *int){
-	*a = 2
-	fmt.Println(*a)
-}
+//func main() {
+//	a := 1
+//	fmt.Println(a)
+//	A(&a)
+//}
+//func A(a *int){
+//	*a = 2
+//	fmt.Println(*a)
+//}
 
 
 
