@@ -38,7 +38,7 @@ import "fmt"
 // 三，switch支持初始化表达式，记得右侧需要跟分号;
 
 func main() {
-	switch a5:=1; { // 此时变量a5 只在switch语句块内有效
+	switch a5 := 1;{ // 此时变量a5 只在switch语句块内有效
 	case a5>=0:
 		fmt.Println("a5 = 0")
 		//fallthrough
