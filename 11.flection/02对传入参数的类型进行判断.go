@@ -12,25 +12,35 @@ import(
 	"reflect"
 )
 
-type User struct{
+type User2 struct{
 	Name string
 	Id int
 	Age int
 }
 
-func (u User)Hello(){
+func (u User2)Hello(){
 	fmt.Println("hello world!")
 }
 
 func main() {
-	u1 := User{Name:"lucky",Id:12356,Age:18}
-	Info(u1)
+	u1 := User2{Name:"lucky",Id:12356,Age:18}
+	// 不可以传入指针（pointer interface），
+	//Info2(&u1)
+	// 只能reflect.struct类型
+	Info2(u1)
 }
 
-func Info(o interface{}){
+func Info2(o interface{}){
 	t := reflect.TypeOf(o) // 获得类型信息
 	fmt.Printf("%T\n",t)
 	fmt.Println("type:",t.Name())
+
+	// 判断传入的参数是想要的类型.
+	// 当传入的是指针的时候会转换失败，出现错误提示“XX”
+	if k := t.Kind(); k!= reflect.Struct {
+		fmt.Println("XX")
+		return
+	}
 
 	v := reflect.ValueOf(o) // 获得字段信息
 	fmt.Printf("%T\n",v)
