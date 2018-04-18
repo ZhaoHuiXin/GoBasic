@@ -18,7 +18,7 @@ import "fmt"
 type A1 struct {
 	Name string
  }
- type B1 struct {
+type B1 struct {
 	Name string
  }
 

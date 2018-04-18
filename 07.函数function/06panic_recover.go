@@ -34,8 +34,7 @@ func B6() {
 		// 如果返回nil，说明什么都不需要做
 		// 利用defer中的recover进行恢复;当程序panic后，会先执行最后一个defer
 		if err := recover();err != nil{
-			fmt.Println("recover inb")
-
+			fmt.Println("recover in b")
 		}
 	}()
 
