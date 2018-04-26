@@ -9,23 +9,23 @@ import(
 
 func fibonacci(c, quit chan int){
 	x, y := 1, 1
-	for {
-		select {
-			case c <- x:
+	//for {
+	//	select {
+	//		case c <- x:
+	//		x, y = y, x+y
+	//		case v:=<- quit:
+	//			fmt.Println("quit",v)
+	//			return
+	//	}
+		for i :=0; i < 10; i++{
+			c <- x
 			x, y = y, x+y
-			case v:=<- quit:
-				fmt.Println("quit",v)
-				return
 		}
-		//for i :=0; i < 10; i++{
-		//	c <- x
-		//	x, y = y, x+y
-		//}
-		//
-		//fmt.Println("2",)
-		//
-		//return
-	}
+		<- quit
+		fmt.Println("quit",)
+		fmt.Println("2",)
+
+		return
 }
 
 func main() {
@@ -35,9 +35,7 @@ func main() {
 			fmt.Println("1",<-c)
 		}
 		quit <- 999
-
 	}()
 	fibonacci(c, quit)
 	//fmt.Println(<- quit )
-
 }
