@@ -15,15 +15,27 @@ func main() {
 	//}
 	//var s Serverslice
 
-	var s interface{}
+	var s map[string]interface{}
 	jstr := `{"servers":[{"serverName":"Shanghai_VPN","serverIP":"127.0.0.1"},
              {"serverName":"Beijing_VPN","serverIP":"127.0.0.2"}]}`
 		 	json.Unmarshal([]byte(jstr), &s)
-	value, ok := s.(map[string]interface{})
-	if !ok{
-		fmt.Println("it's not ok for type string!")
-		return
-	}
-	fmt.Printf("%T",value)
-	fmt.Println(value)
+	fmt.Println(s)
+	fmt.Println(s["servers"])
+	m, _ := s["servers"].([]map[string]interface{})
+
+	fmt.Println("-------------------------------------------------")
+	fmt.Println(m)
+	//fmt.Println(m[0])
+	//if !ok{
+	//	fmt.Println("it's not ok for type string!")
+	//	return
+	//}
+	//fmt.Printf("%T \n",value)
+	//fmt.Println(value)
+	//fmt.Println(value["servers"])
+	//s2 :=value["servers"]
+	//m, ok := s2.([]map[string]interface{})
+	//fmt.Println(m[1])
+	//fmt.Println(m[0]["serverName"])
 }
+
