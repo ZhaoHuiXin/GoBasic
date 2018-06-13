@@ -1,0 +1,31 @@
+{
+  "car_ID":"24224",
+  "colors": [
+    ["Color_00", "黑色", "rgba(0,0,0,1)"],
+    ["Color_01", "晶亮白", "rgba(238,243,245,1)"],
+    ["Color_02", "超音速石英白", "rgba(249,245,235,1)"],
+    ["Color_03", "蓝焰色", "rgba(0,53,133,1)"],
+    ["Color_04", "超音速钛银", "rgba(149,147,143,1)"],
+    ["Color_05", "白金灰", "rgba(204,211,213,1)"],
+    ["Color_06", "酒红云母", "rgba(142,28,45,1)"],
+    ["Color_07", "琥珀色", "rgba(59,12,12,1)"],
+    ["Color_08", "宝石蓝", "rgba(0,64,108,1)"],
+    ["Color_09", "亮褐金属", "rgba(202,201,194,1)"]
+  ],
+  "wheels" : [
+    ["Wheel_01", "R20运动"],     
+    ["Wheel_02", "R20尊贵"],
+	["Wheel_03", "03R20典雅"],
+    ["Wheel_04", "R18精英"]
+  ],
+  "explains" : [
+    {"id":2,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/1.jpg)","title":"矩阵式LED远近光照明大灯", "des":"三组透镜式LED前大灯，与L型日行灯交相辉映，带转角照明功能，保障行车安全。"},
+    {"id":15,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/2.jpg)","title":"独特立柱设计", "des":"别出心裁的尾部立柱设计，形成悬浮效果，呈现完美视觉体验。"},
+    {"id":18,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/3.jpg)","title":"信息操作系统", "des":"Remote Touch信息操作系统，整合车辆所有的多媒体操作，方便快捷。"},
+    {"id":31,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/4.jpg)","title":"4.	开阔内部空间", "des":"充分规划和精心布局的内饰，带来开阔的空间以及灵活的空间组合。"},
+    {"id":19,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/5.jpg)","title":"12.3英寸中控大屏", "des":"12.3英寸高清液晶屏的娱乐系统，带来超凡智行体验。"},
+    {"id":14,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/6.jpg)","title":"AWD全轮驱动系统", "des":"采用动态扭矩控制的全轮驱动系统，自如应对所有复杂工况，达到最佳性能以及节能的平衡点。"},
+    {"id":22,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/7.jpg)","title":"10个SRS空气囊系统", "des":"配备十个安全气囊，妥善保护每一位乘客的安全。"},
+    {"id":17,"url":"url(cdvfile://localhost/library-nosync/cars/24224/point/8.jpg)","title":"360度全景监控系统", "des":"360度全景监控系统，保护车辆和行人的安全。"}
+  ]
+}
